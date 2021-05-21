@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		60A5E355265697010040F0D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A5E354265697010040F0D3 /* AppDelegate.swift */; };
-		60A5E359265697010040F0D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A5E358265697010040F0D3 /* ViewController.swift */; };
 		60A5E35C265697010040F0D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60A5E35A265697010040F0D3 /* Main.storyboard */; };
 		60A5E35E265697050040F0D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60A5E35D265697050040F0D3 /* Assets.xcassets */; };
 		60A5E361265697050040F0D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60A5E35F265697050040F0D3 /* LaunchScreen.storyboard */; };
@@ -28,7 +27,6 @@
 /* Begin PBXFileReference section */
 		60A5E351265697010040F0D3 /* TheMovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60A5E354265697010040F0D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		60A5E358265697010040F0D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		60A5E35B265697010040F0D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		60A5E35D265697050040F0D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60A5E360265697050040F0D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,7 +77,6 @@
 				60A5E38E26576A9E0040F0D3 /* API */,
 				60A5E3862657622A0040F0D3 /* Model */,
 				60A5E354265697010040F0D3 /* AppDelegate.swift */,
-				60A5E358265697010040F0D3 /* ViewController.swift */,
 				60A5E35A265697010040F0D3 /* Main.storyboard */,
 				60A5E35D265697050040F0D3 /* Assets.xcassets */,
 				60A5E35F265697050040F0D3 /* LaunchScreen.storyboard */,
@@ -191,7 +188,6 @@
 				60A5E37926572DCA0040F0D3 /* MovieGenreTableViewCell.swift in Sources */,
 				60A5E37E265752C80040F0D3 /* MovieListViewController.swift in Sources */,
 				60A5E38C265762DE0040F0D3 /* Genres.swift in Sources */,
-				60A5E359265697010040F0D3 /* ViewController.swift in Sources */,
 				60A5E355265697010040F0D3 /* AppDelegate.swift in Sources */,
 				60A5E383265754E90040F0D3 /* MovieListTableViewCell.swift in Sources */,
 				60A5E39026576AB40040F0D3 /* APIService.swift in Sources */,
