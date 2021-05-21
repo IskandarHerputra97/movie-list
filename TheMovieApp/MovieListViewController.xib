@@ -21,24 +21,28 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="9lE-jz-yL3">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vgb-F5-YIV">
-                    <rect key="frame" x="0.0" y="56" width="414" height="840"/>
+                    <rect key="frame" x="0.0" y="100" width="414" height="796"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ppx-t0-8li"/>
+                        <outlet property="delegate" destination="-1" id="iaf-me-vSS"/>
+                    </connections>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="9lE-jz-yL3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6oq-fQ-34Q"/>
+                <constraint firstItem="9lE-jz-yL3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="85h-3x-iK9"/>
                 <constraint firstItem="vgb-F5-YIV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Bff-TQ-1z8"/>
                 <constraint firstAttribute="trailing" secondItem="9lE-jz-yL3" secondAttribute="trailing" id="fSz-3b-5iD"/>
                 <constraint firstAttribute="bottom" secondItem="vgb-F5-YIV" secondAttribute="bottom" id="iSA-L8-xdH"/>
                 <constraint firstItem="vgb-F5-YIV" firstAttribute="top" secondItem="9lE-jz-yL3" secondAttribute="bottom" id="l8m-41-swd"/>
                 <constraint firstItem="vgb-F5-YIV" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="nQP-Uf-HR0"/>
-                <constraint firstItem="9lE-jz-yL3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sAk-fS-hkg"/>
             </constraints>
             <point key="canvasLocation" x="-146.37681159420291" y="-21.428571428571427"/>
         </view>
