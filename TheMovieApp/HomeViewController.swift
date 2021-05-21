@@ -13,6 +13,8 @@ class HomeViewController: UIViewController {
 
     private var cellViewModel: [MovieGenreTableViewCellViewModel] = []
     
+    private var i = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -29,8 +31,9 @@ class HomeViewController: UIViewController {
     private func fetchGenreList() {
         var cellViewModel: [MovieGenreTableViewCellViewModel] = []
         for _ in 1...5 {
-            let viewModel: MovieGenreTableViewCellViewModel = MovieGenreTableViewCellViewModel(genre: "Genre Name")
+            let viewModel: MovieGenreTableViewCellViewModel = MovieGenreTableViewCellViewModel(genre: "Genre Name \(i)")
             cellViewModel.append(viewModel)
+            i += 1
         }
         self.cellViewModel.append(contentsOf: cellViewModel)
         
