@@ -29,15 +29,14 @@ class HomeViewController: UIViewController {
     
     //MARK: - Private
     private func fetchGenreList() {
-        var cellViewModel: [MovieGenreTableViewCellViewModel] = []
-        for _ in 1...5 {
-            let viewModel: MovieGenreTableViewCellViewModel = MovieGenreTableViewCellViewModel(genre: "Genre Name \(i)")
-            cellViewModel.append(viewModel)
-            i += 1
-        }
-        self.cellViewModel.append(contentsOf: cellViewModel)
-        
-        if self.cellViewModel.count > 0 {
+        APIService.getMovieData {
+            var cellViewModel: [MovieGenreTableViewCellViewModel] = []
+            for item in APIService.genres {
+                let viewModel: MovieGenreTableViewCellViewModel = MovieGenreTableViewCellViewModel(genre: "\(item.name)")
+                cellViewModel.append(viewModel)
+            }
+            self.cellViewModel.append(contentsOf: cellViewModel)
+            
             self.tableview.reloadData()
         }
     }

@@ -9,6 +9,7 @@ import Foundation
 
 class APIService {
     static var movies = [Movie]()
+    static var genres = [Genres]()
     static var movieCount = 0
     
     static func getMovieData(completion: @escaping () -> Void) {
@@ -23,6 +24,7 @@ class APIService {
                 let decoder = JSONDecoder()
                 let result = try decoder.decode(Movie.self, from: data)
                 self.movies.append(result)
+                self.genres.append(contentsOf: result.genres)
                 self.movieCount = result.genres.count
                 DispatchQueue.main.async {
                     completion()
