@@ -10,7 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="TheMovieApp" customModuleProvider="target">
             <connections>
-                <outlet property="headerLabel" destination="j7C-7n-jJI" id="ZFd-CU-AZ8"/>
+                <outlet property="searchBar" destination="6Ev-3c-3i6" id="LwS-tw-NhC"/>
+                <outlet property="tableview" destination="xoL-bk-EFE" id="6GZ-7h-hkE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,46 +20,31 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8kg-on-5u5">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ml2-EA-quD">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="865.5"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7C-7n-jJI">
-                                    <rect key="frame" x="8" y="48" width="359" height="20.5"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            <constraints>
-                                <constraint firstAttribute="bottom" secondItem="j7C-7n-jJI" secondAttribute="bottom" constant="797" id="4V9-tV-yj3"/>
-                                <constraint firstItem="j7C-7n-jJI" firstAttribute="leading" secondItem="Ml2-EA-quD" secondAttribute="leading" constant="8" id="NFq-hu-IrP"/>
-                                <constraint firstItem="j7C-7n-jJI" firstAttribute="top" secondItem="Ml2-EA-quD" secondAttribute="top" constant="48" id="uf4-V4-QmS"/>
-                                <constraint firstAttribute="trailing" secondItem="j7C-7n-jJI" secondAttribute="trailing" constant="8" id="yG3-sd-9BE"/>
-                            </constraints>
-                        </view>
-                    </subviews>
-                    <constraints>
-                        <constraint firstItem="Ml2-EA-quD" firstAttribute="leading" secondItem="8kg-on-5u5" secondAttribute="leading" id="Gaf-r8-Vyn"/>
-                        <constraint firstAttribute="bottom" secondItem="Ml2-EA-quD" secondAttribute="bottom" id="LpY-Lr-JaO"/>
-                        <constraint firstItem="Ml2-EA-quD" firstAttribute="top" secondItem="8kg-on-5u5" secondAttribute="top" id="NI5-GX-XNA"/>
-                        <constraint firstItem="Ml2-EA-quD" firstAttribute="width" secondItem="8kg-on-5u5" secondAttribute="width" id="cSE-0N-HxI"/>
-                        <constraint firstAttribute="trailing" secondItem="Ml2-EA-quD" secondAttribute="trailing" id="ws4-vc-HW3"/>
-                    </constraints>
-                </scrollView>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="6Ev-3c-3i6">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xoL-bk-EFE">
+                    <rect key="frame" x="0.0" y="56" width="375" height="611"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="R07-l3-Itn"/>
+                        <outlet property="delegate" destination="-1" id="oyE-PM-dEY"/>
+                    </connections>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="8kg-on-5u5" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="13a-KK-zzb"/>
-                <constraint firstAttribute="bottom" secondItem="8kg-on-5u5" secondAttribute="bottom" id="Zpg-Co-PHC"/>
-                <constraint firstItem="8kg-on-5u5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cqt-rX-sV4"/>
-                <constraint firstItem="8kg-on-5u5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mHf-LD-NqF"/>
+                <constraint firstItem="xoL-bk-EFE" firstAttribute="top" secondItem="6Ev-3c-3i6" secondAttribute="bottom" id="Bko-im-R3n"/>
+                <constraint firstItem="xoL-bk-EFE" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="KEv-mo-cbK"/>
+                <constraint firstItem="6Ev-3c-3i6" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="UX4-Jd-4hB"/>
+                <constraint firstItem="6Ev-3c-3i6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="mBd-vR-f2U"/>
+                <constraint firstItem="6Ev-3c-3i6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="nDr-ac-eFm"/>
+                <constraint firstItem="xoL-bk-EFE" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="oTL-Ia-Dk6"/>
+                <constraint firstItem="xoL-bk-EFE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qVc-ze-5gB"/>
             </constraints>
-            <point key="canvasLocation" x="-146.37681159420291" y="-21.428571428571427"/>
+            <point key="canvasLocation" x="-146.40000000000001" y="-22.03898050974513"/>
         </view>
     </objects>
     <resources>
