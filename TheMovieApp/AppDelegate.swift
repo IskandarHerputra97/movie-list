@@ -33,7 +33,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func createNonLoginLandingPage() -> UIViewController {
         let landingPageViewController: HomeViewController = HomeViewController()
-        return landingPageViewController
+        let navigationController = UINavigationController(rootViewController: landingPageViewController)
+        return navigationController
     }
 }
 

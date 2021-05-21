@@ -16,6 +16,8 @@
 		60A5E36D2656985B0040F0D3 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60A5E36B2656985B0040F0D3 /* HomeViewController.xib */; };
 		60A5E37926572DCA0040F0D3 /* MovieGenreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A5E37726572DCA0040F0D3 /* MovieGenreTableViewCell.swift */; };
 		60A5E37A26572DCA0040F0D3 /* MovieGenreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60A5E37826572DCA0040F0D3 /* MovieGenreTableViewCell.xib */; };
+		60A5E37E265752C80040F0D3 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A5E37C265752C70040F0D3 /* MovieListViewController.swift */; };
+		60A5E37F265752C80040F0D3 /* MovieListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60A5E37D265752C70040F0D3 /* MovieListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		60A5E36B2656985B0040F0D3 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		60A5E37726572DCA0040F0D3 /* MovieGenreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGenreTableViewCell.swift; sourceTree = "<group>"; };
 		60A5E37826572DCA0040F0D3 /* MovieGenreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieGenreTableViewCell.xib; sourceTree = "<group>"; };
+		60A5E37C265752C70040F0D3 /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		60A5E37D265752C70040F0D3 /* MovieListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				60A5E36B2656985B0040F0D3 /* HomeViewController.xib */,
 				60A5E37726572DCA0040F0D3 /* MovieGenreTableViewCell.swift */,
 				60A5E37826572DCA0040F0D3 /* MovieGenreTableViewCell.xib */,
+				60A5E37C265752C70040F0D3 /* MovieListViewController.swift */,
+				60A5E37D265752C70040F0D3 /* MovieListViewController.xib */,
 			);
 			path = TheMovieApp;
 			sourceTree = "<group>";
@@ -136,6 +142,7 @@
 				60A5E37A26572DCA0040F0D3 /* MovieGenreTableViewCell.xib in Resources */,
 				60A5E361265697050040F0D3 /* LaunchScreen.storyboard in Resources */,
 				60A5E35E265697050040F0D3 /* Assets.xcassets in Resources */,
+				60A5E37F265752C80040F0D3 /* MovieListViewController.xib in Resources */,
 				60A5E35C265697010040F0D3 /* Main.storyboard in Resources */,
 				60A5E36D2656985B0040F0D3 /* HomeViewController.xib in Resources */,
 			);
@@ -149,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60A5E37926572DCA0040F0D3 /* MovieGenreTableViewCell.swift in Sources */,
+				60A5E37E265752C80040F0D3 /* MovieListViewController.swift in Sources */,
 				60A5E359265697010040F0D3 /* ViewController.swift in Sources */,
 				60A5E355265697010040F0D3 /* AppDelegate.swift in Sources */,
 				60A5E36C2656985B0040F0D3 /* HomeViewController.swift in Sources */,

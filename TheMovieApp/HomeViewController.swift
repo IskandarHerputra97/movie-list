@@ -57,3 +57,11 @@ extension HomeViewController: UITableViewDataSource {
         return cell
     }
 }
+
+extension HomeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("didSelectRowAt \(indexPath.row)")
+        let movieListVC: MovieListViewController = MovieListViewController()
+        navigationController?.pushViewController(movieListVC, animated: true)
+    }
+}
